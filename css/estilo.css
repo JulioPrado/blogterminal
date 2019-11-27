@@ -1,0 +1,140 @@
+﻿@charset "UTF-8"; 
+@import url(https://fonts.googleapis.com/css?family=Londrina+Sketch|Open+Sans|Ubuntu|Source+Code+Pro:400,700);  
+/* social-link e H2/3 | Logo | P | Artigo */
+
+.hidden{
+	display:none;
+} 
+
+.clear{
+	clear: both;
+}
+
+.comentario{
+	font-style:italic;
+
+}
+
+.centro{
+	text-align: center;
+	display: block; 
+	margin: 0 auto;
+}
+
+body{
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* =============== lista artigos ==================*/
+
+div#artigos{
+	padding-top: 200px;
+	display: block;
+	color: #DBDBDB;
+    width: 100%;
+    margin: 0 auto;
+	font-family: "Source Code Pro",monospace;
+	font-size: 1em;
+	line-height: 1.2;
+}
+ /*
+div#artigos p{
+	font-family: "Source Code Pro",monospace;
+	font-size: 1em !important;
+	line-height: 1.5;
+}
+*/
+
+#artigos-header,#lista-artigos,#conteudo,#artigos-footer,#sobre{
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+div#artigos-header a:hover{
+	text-decoration: none!important;
+	color: white;
+
+}
+
+div#artigos-header p{
+	font-size: 1.1em;
+	border-top: 1px dashed #DBDBDB;
+	border-bottom: 1px dashed #DBDBDB;
+	padding: 3px;
+}
+
+div#lista-artigos ul{
+	list-style: none;
+	/*
+	height: 160px;
+	overflow-y: scroll;
+	scrollbar-color: #222 #DBDBDB;
+	*/
+}
+div#lista-artigos li{
+	margin-left: -15px; /* Aproximar mais da margem esquerda */
+/*	white-space: nowrap;
+	overflow-x: hidden;*/
+}
+
+div#artigos a{
+	text-decoration: none;
+	color: #DBDBDB;
+}
+
+div#artigos a:hover{
+	text-decoration: underline;
+}
+
+div#artigos-footer{
+	border-bottom: 1px dashed #DBDBDB;
+	text-align: right;
+	padding: 5px 0;
+}
+
+a.fechar-artigo{
+	display: none;
+	text-align: center;
+	padding: 10px;
+}
+a.fechar-artigo:hover{
+	color: #DBDBDB;
+	text-decoration: underline;
+}
+div#sobre a{
+	font-size: 0.8em;
+	float: right;
+	padding: 5px;
+	opacity: 0.4;
+}
+
+/* ------- conteudo artigo --------*/
+
+div#conteudo{
+	border-top: 1px dashed #DBDBDB;
+}
+
+div#conteudo #data{
+	text-align: right;
+}
+
+/* =============== fim artigos ==================*/
+
+@media screen and (max-width: 600px){ /*=============Até 540 Pixels ===(MOBILE)===================*/
+
+	div#lista-artigos li{
+	margin-left: -35px;
+	}
+
+	#artigos-header,#lista-artigos,#conteudo,#artigos-footer{
+	margin: 0 10px;
+	font-size: 0.9em;
+	}
+	.data-dia{
+		display: none;
+	}
+}
