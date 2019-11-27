@@ -12,6 +12,8 @@
 
 .comentario{
 	font-style:italic;
+	color: grey;
+	font-size: .9em;
 
 }
 
@@ -32,7 +34,7 @@ body{
 /* =============== lista artigos ==================*/
 
 div#artigos{
-	padding-top: 200px;
+	padding-top: 20px;
 	display: block;
 	color: #DBDBDB;
     width: 100%;
@@ -114,12 +116,22 @@ div#sobre a{
 
 /* ------- conteudo artigo --------*/
 
+div#conteudo h1#titulo{
+	font-size: 1.2em;
+}
+
 div#conteudo{
 	border-top: 1px dashed #DBDBDB;
 }
 
+div#conteudo p{
+	text-indent: 5px;
+	line-height: 1.5;
+}
+
 div#conteudo #data{
 	text-align: right;
+	font-style:italic;
 }
 
 /* =============== fim artigos ==================*/
@@ -133,8 +145,5 @@ div#conteudo #data{
 	#artigos-header,#lista-artigos,#conteudo,#artigos-footer{
 	margin: 0 10px;
 	font-size: 0.9em;
-	}
-	.data-dia{
-		display: none;
 	}
 }
