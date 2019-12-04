@@ -78,7 +78,6 @@ div#lista-artigos li{
 
 div#artigos a{
 	text-decoration: none;
-	color: #6495ED;
 }
 
 div#artigos a:hover{
@@ -120,6 +119,10 @@ div#conteudo{
 div#conteudo p{
 	text-indent: 15px;
 	line-height: 1.5;
+}
+
+div#conteudo a{
+	color: #6495ED;
 }
 
 div#conteudo #data{
